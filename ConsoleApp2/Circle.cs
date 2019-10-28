@@ -23,7 +23,7 @@ namespace Laborat2
         }
         public void Print()
         {
-            Console.WriteLine(this.ToString());
+            Console.WriteLine(this.ToString() + " радиус=" + this.R.ToString());
         }
     }
 }

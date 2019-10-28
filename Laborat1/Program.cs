@@ -29,7 +29,7 @@ namespace Laboratorn1
 
             if ((a == 0) & (b == 0))
             {
-                WriteColor("Нет корней", 1);
+                WriteColor("Корней нет", 1);
             }
 
             if ((a == 0) & (b != 0))
