@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Laborat2
 {
 
-    abstract class GeomFigure
+    abstract class GeomFigure: IComparable
     {
 
         public string Type
@@ -29,14 +29,15 @@ namespace Laborat2
 
         public override string ToString()
         {
-            return this.Type + " площадью " + this.Area().ToString();
+            return base.ToString()+"";
         }
-    }
-
-
-    interface IPrint
-    {
-        void Print();
+        public int CompareTo(object obj)
+        {
+            GeomFigure p = (GeomFigure)obj;
+            if (this.Area() < p.Area()) return -1;
+            else if (this.Area() == p.Area()) return 0;
+            else return 1;
+        }
     }
 
 

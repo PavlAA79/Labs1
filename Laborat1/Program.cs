@@ -35,13 +35,17 @@ namespace Laboratorn1
             if ((a == 0) & (b != 0))
             {
                 double x = -c / b;
-                WriteColor("R=" + x, 0);
+                if (x<0) WriteColor("Корней нет", 1);
+                else WriteColor("R1=" + Math.Sqrt(x)+ ", R2=" + (-1)*Math.Sqrt(x), 0);
             }
             if ((b == 0) & (a != 0))
             {
-                double x1 = Math.Sqrt(Math.Abs(-c / a));
-                double x2 = -Math.Sqrt(Math.Abs(-c / a));
-                WriteColor("R1=" + x1 + ", R2=" + x2, 0);
+                if ((-c / a) < 0) WriteColor("Корней нет", 1);
+                else
+                {
+                    double x1 = Math.Sqrt(Math.Abs(-c / a));
+                    WriteColor("R1=" + Math.Sqrt(x1) + ", R2=" + (-1)*Math.Sqrt(x1), 0);
+                }
             }
 
             if ((a != 0) & (b != 0))
@@ -51,19 +55,23 @@ namespace Laboratorn1
                 if (D == 0)
                 {
                     double R = -b / (2 * a);
-                    WriteColor("R=" + R + ", D=" + D, 0);
+                    if (R < 0) WriteColor("Корней нет", 1);
+                    else WriteColor("R1=" + Math.Sqrt(R) + ", R2=" + (-1)*Math.Sqrt(R)+ ", D=" + D, 0);
 
                 }
                 else if (D > 0)
                 {
                     double R1 = (-b + Math.Sqrt(D)) / (2 * a);
                     double R2 = (-b - Math.Sqrt(D)) / (2 * a);
-                    WriteColor("R1=" + R1 + ", R2=" + R2 + ", D=" + D, 0);
-
+                    if ((R1 < 0)&(R2 < 0)) WriteColor("Корней нет", 1);
+                    else
+                        if (R2 < 0) WriteColor("R1=" + Math.Sqrt(R1) + ", R2=" + (-1)*Math.Sqrt(R1) + ", D=" + D, 0);
+                        else if (R1 < 0) WriteColor("R1=" + Math.Sqrt(R2) + ", R2=" + (-1) * Math.Sqrt(R2) + ", D=" + D, 0);
+                        else WriteColor("R1=" + Math.Sqrt(R1) + ", R2=" + (-1) * Math.Sqrt(R1) + ", R3=" + Math.Sqrt(R2) + ", R4=" + (-1) * Math.Sqrt(R2)+", D=" + D, 0);
                 }
                 else if (D < 0)
                 {
-                    WriteColor("Корней нет", 1);
+                    WriteColor("Корней нет, D = 0", 1);
                 }
 
             }
@@ -72,8 +80,8 @@ namespace Laboratorn1
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Павловская Анастасия ИУ5-31Б");
-            Console.WriteLine("Ax^2+Bx+C=0");
+            Console.Title="Павловская Анастасия ИУ5-31Б";
+            Console.WriteLine("Ax^4+Bx^2+C=0");
             string k = "y";
             do
             {
@@ -146,6 +154,7 @@ namespace Laboratorn1
                 k = Console.ReadLine();
 
             } while (k == "y");
+          
             Console.ReadKey();
         }
 

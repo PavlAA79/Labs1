@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laborat2
 {
-    class Rectangle : GeomFigure, IPrint
+     class Rectangle : GeomFigure, IPrint
     {
         double height;
         double width;
@@ -24,10 +24,13 @@ namespace Laborat2
             return S;
         }
 
+        public override string ToString()
+        {
+            return (base.ToString() + " ширина=" + width + " высота=" + height + "площадь = " + Area());
+        }
         public void Print()
         {
-            string str = this.ToString() + " ширина=" + this.width.ToString() + " высота=" + this.height.ToString();
-            Console.WriteLine(str);
+            Console.WriteLine(this.ToString());
         }
     }
 }

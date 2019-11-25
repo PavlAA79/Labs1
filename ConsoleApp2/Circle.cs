@@ -21,9 +21,13 @@ namespace Laborat2
             double S = Math.PI * this.R * this.R;
             return S;
         }
+        public override string ToString()
+        {
+            return (base.ToString() + " радиус=" + R + "площадь = " + Area());
+        }
         public void Print()
         {
-            Console.WriteLine(this.ToString() + " радиус=" + this.R.ToString());
+            Console.WriteLine(this.ToString());
         }
     }
 }
