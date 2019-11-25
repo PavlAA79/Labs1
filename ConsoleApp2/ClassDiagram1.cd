@@ -3,14 +3,14 @@
   <Class Name="Laborat2.GeomFigure">
     <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAQAABAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAQAAAQAABAA=</HashCode>
       <FileName>GeomFigure.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Laborat2.Circle">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAQA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAQAEAQA=</HashCode>
       <FileName>Circle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -25,7 +25,7 @@
   <Class Name="Laborat2.Rectangle">
     <Position X="4.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAQAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQEQAAAAAAAAAAAAAAAAAAAAQAEAAA=</HashCode>
       <FileName>Rectangle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -42,7 +42,7 @@
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>GeomFigure.cs</FileName>
+      <FileName>IPrint.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

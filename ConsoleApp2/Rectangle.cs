@@ -26,7 +26,7 @@ namespace Laborat2
 
         public override string ToString()
         {
-            return (base.ToString() + " ширина=" + width + " высота=" + height + "площадь = " + Area());
+            return (Type.ToString() + ": ширина = " + width + ", высота = " + height + ", площадь = " + Area());
         }
         public void Print()
         {

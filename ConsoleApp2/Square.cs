@@ -12,5 +12,6 @@ namespace Laborat2
         {
             this.Type = "Квадрат";
         }
+
     }
 }

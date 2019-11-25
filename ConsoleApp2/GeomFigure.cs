@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Laborat2
 {
 
-    abstract class GeomFigure: IComparable
+    abstract class GeomFigure//: IComparable
     {
 
         public string Type
@@ -29,7 +29,7 @@ namespace Laborat2
 
         public override string ToString()
         {
-            return base.ToString()+"";
+            return Type.ToString()+"";
         }
         public int CompareTo(object obj)
         {

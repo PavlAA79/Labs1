@@ -23,7 +23,7 @@ namespace Laborat2
         }
         public override string ToString()
         {
-            return (base.ToString() + " радиус=" + R + "площадь = " + Area());
+            return (Type.ToString() + ": радиус = " + R + ", площадь = " + Area());
         }
         public void Print()
         {
