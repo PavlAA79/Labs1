@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laborat2
+namespace Laborat3
 {
-    class Rectangle : GeomFigure, IPrint
+    class Rectangle : GeomFigure, IPrint 
     {
         double height;
         double width;

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Laborat6._2.ForInspection">
+    <Position X="5.75" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAABAAAAAAAAACgAAAAAAAE=</HashCode>
+      <FileName>ForInspection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laborat6._2.NewAttribute">
+    <Position X="1" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laborat6._2.Program">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

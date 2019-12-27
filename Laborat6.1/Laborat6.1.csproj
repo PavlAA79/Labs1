@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E470277-0EFC-4982-8BE8-B5FFFC8E365F}</ProjectGuid>
+    <ProjectGuid>{B56A29A9-2AC8-46B8-87CE-AD1220E27CE8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laborat3</RootNamespace>
-    <AssemblyName>Laborat3</AssemblyName>
+    <RootNamespace>Laborat6._1</RootNamespace>
+    <AssemblyName>Laborat6.1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,30 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="FigureMatrixCheckEmpty.cs" />
-    <Compile Include="GeomFigure.cs" />
-    <Compile Include="IMatrixCheckEmpty.cs" />
-    <Compile Include="IPrint.cs" />
-    <Compile Include="Matrix3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="SimpleList.cs" />
-    <Compile Include="SimpleListItem.cs" />
-    <Compile Include="SimpleStack.cs" />
-    <Compile Include="Square.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp2\Laborat2.csproj">
-      <Project>{4ade7440-f9e0-436c-ab43-c697549a081b}</Project>
-      <Name>Laborat2</Name>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
